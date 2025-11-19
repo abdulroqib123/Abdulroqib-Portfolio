@@ -21,17 +21,30 @@
           <span id="bottom-bar"></span>
         </div>
         <nav>
-          <a onclick="hideNav()" href="#about">About</a>
-          <a onclick="hideNav()" href="#skills">Skills</a>
-          <a onclick="hideNav()" href="#projects">Projects</a>
-          <a onclick="hideNav()" href="#contact">Contact</a>
+          <!--Use onclick to make sidebar close when link is clicked-->
+          <a class="aboutLink" onclick="togglesidebar()" href="#about">About</a>
+          <a class="skillsLink" onclick="togglesidebar()" href="#skills"
+            >Skills</a
+          >
+          <a class="projectsLink" onclick="togglesidebar()" href="#projects"
+            >Projects</a
+          >
+          <a class="contactLink" onclick="togglesidebar()" href="#contact"
+            >Contact</a
+          >
         </nav>
       </div>
       <nav id="nav-links">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <a class="aboutLink" onclick="togglesidebar()" href="#about">About</a>
+        <a class="skillsLink" onclick="togglesidebar()" href="#skills"
+          >Skills</a
+        >
+        <a class="projectsLink" onclick="togglesidebar()" href="#projects"
+          >Projects</a
+        >
+        <a class="contactLink" onclick="togglesidebar()" href="#contact"
+          >Contact</a
+        >
       </nav>
     </header>
     <main>
@@ -41,7 +54,9 @@
           Beginner Front-End Developer| Creator of
           <a href="https://scyflix.github.io/Scybud-Labs/">Scybud</a>
         </p>
-        <a id="projectbtn" href="#projects">View my projects</a>
+        <a class="btn projectsLink" href="#projects"
+          >View my projects</a
+        >
       </section>
       <section id="about" class="cards">
         <h2>About Me</h2>
@@ -66,49 +81,45 @@
         <h2>My Projects</h2>
         <div id="projects-container">
           <div class="project">
-            <a href="https://trytasty.de/">TryTasty</a>
+            <h3>TryTasty</h3>
             <p>Recipe website for easy, fun and tasty snack recipes.</p>
+            <a href="https://trytasty.de/" class="btn">View</a>
           </div>
           <div class="project">
-            <a href="https://scyflix.github.io/Playbud/">Playbud</a>
+            <h3>Playbud</h3>
             <p>A game portal for simple icebreaker and bordom-killer games.</p>
+                        <a href="https://scyflix.github.io/Playbud/" class="btn">View</a>
+
           </div>
           <div class="project">
-            <a href="https://scyflix.github.io/ResBuild/">ResBuild</a>
+            <h3>ResBuild</h3>
             <p>
               A resume builder website that helps to create simple resume(first
               project i made with JavaScript).
             </p>
+                        <a href="https://scyflix.github.io/ResBuild/" class="btn">View</a>
+
           </div>
           <div class="project">
-            <a href="https://sites.google.com/view/thias-vogue/home"
-              >Thia`s Vogue</a
+            <h3
+              >Thia`s Vogue</h3
             >
             <p>
               A fashionsite showcasing a Nigerian based fashion designer`s work
               and styles(created with Google Sites).
             </p>
-          </div>
-          <div class="project">
-            <a href="https://scyflix.github.io/Scybud-Labs/calculator.html"
-              >A calculator</a
+             <a href="https://sites.google.com/view/thias-vogue/home" class="btn"
+              >View</a
             >
-            <p>A web calculator built as a learning projects.</p>
           </div>
           <div class="project">
-            <a href="https://scyflix.github.io/Abdulroqib-Oladipo/"
-              >My Resume</a
-            >
-            <p>
-              My resume created as a website for an internship position to show
-              my skils at the time.
-            </p>
-          </div>
-          <div class="project">
-            <a href="https://scyflix.github.io/Abdulroqib-Oladipo/"
-              >Salvation Nsx</a
+            <h3
+              >Salvation Nsx</h3
             >
             <p>An artist website showcasing his work.</p>
+             <a href="https://scyflix.github.io/Abdulroqib-Oladipo/" class="btn"
+              >View</a
+            >
           </div>
         </div>
       </section>
@@ -134,14 +145,6 @@
     <footer>
       <p>&copy; Scybud | Built by Abdulroqib Oladipo</p>
     </footer>
-    <script>
-      const sidebar = document.querySelector(".sidebar");
-      function togglesidebar() {
-        sidebar.classList.toggle("show");
-      }
-      function hideNav() {
-        sidebar.classList.toggle("show");
-      }
-    </script>
+    <script src="app.js"></script>
   </body>
 </html>
