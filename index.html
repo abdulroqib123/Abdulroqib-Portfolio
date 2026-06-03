@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Abdulroqib | Portfolio</title>
+    <title>Abdulroqib | Home & About</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
+       <header>
       <div id="menuicon" onclick="togglesidebar()">
         <span></span>
         <span></span>
@@ -21,148 +21,47 @@
           <span id="bottom-bar"></span>
         </div>
         <nav>
-          <!--Use onclick to make sidebar close when link is clicked-->
-          <a class="aboutLink" onclick="togglesidebar()" href="#about">About</a>
-          <a class="skillsLink" onclick="togglesidebar()" href="#skills"
-            >Skills</a
-          >
-          <a class="projectsLink" onclick="togglesidebar()" href="#projects"
-            >Projects</a
-          >
-          <a class="contactLink" onclick="togglesidebar()" href="#contact"
-            >Contact</a
-          >
+          <a class="aboutLink active" href="index.html">About</a>
+          <a class="skillsLink" href="skills.html">Skills</a>
+          <a class="projectsLink" href="projects.html">Projects</a>
+          <a class="contactLink" href="contact.html">Contact</a>
         </nav>
       </div>
-      <nav id="nav-links">
-        <a class="aboutLink" onclick="togglesidebar()" href="#about">About</a>
-        <a class="skillsLink" onclick="togglesidebar()" href="#skills"
-          >Skills</a
-        >
-        <a class="projectsLink" onclick="togglesidebar()" href="#projects"
-          >Projects</a
-        >
-        <a class="contactLink" onclick="togglesidebar()" href="#contact"
-          >Contact</a
-        >
-      </nav>
+      
     </header>
     <main>
-      <section>
-        <section id="hero">
-          <h2>Hi, Welcome to my <span>space</span></h2>
-          <p>
-            Beginner Front-End Developer| Creator of
-            <a href="https://scyflix.github.io/Scybud-Labs/">Scybud</a>
-          </p>
-          <a class="btn projectsLink" href="#projects">View my projects</a>
-        </section>
+      <section id="hero">
+        <h2>Hi, Welcome to my <span></span></h2>
+        <p>
+          Beginner Front-End Developer | Creator of
+          <a href="https://scyflix.github.io/Scybud-Labs/">Scybud</a>
+        </p>
+        <a class="btn" href="projects.html">View my projects</a>
       </section>
+
       <section id="about" class="cards">
         <h2>About Me</h2>
         <p>
           I didn’t start programming because I was “naturally gifted” or because
           everything made sense at the beginning. I started because I was
           curious, frustrated, and tired of only consuming technology instead of
-          understanding how it works.</p>
-          <p> I’m a beginner Front-End Developer
-          learning HTML, CSS, and JavaScript, and most of what I know comes from
-          building things, breaking them, and fixing them again. I’ve struggled
-          with bugs that made no sense, designs that didn’t look right, and code
-          that worked yesterday but not today. That process is exactly how I
-          learn.</p>
-          <p>
-           I build projects to grow, not to impress. Every website I
+          understanding how it works.
+        </p>
+        <p> 
+          I’m a beginner Front-End Developer learning HTML, CSS, and JavaScript, 
+          and most of what I know comes from building things, breaking them, and 
+          fixing them again. I’ve struggled with bugs that made no sense, designs 
+          that didn’t look right, and code that worked yesterday but not today. 
+          That process is exactly how I learn.
+        </p>
+        <p>
+          I build projects to grow, not to impress. Every website I
           create teaches me something new about structure, problem-solving, and
           patience. Web development is part of a bigger picture for me: I’m
           working toward a future in robotics engineering, where logic, systems,
           and persistence matter more than shortcuts. I’m still early in the
           journey, but I take it seriously. I show up, I keep learning, and I
           don’t quit when things get hard.
-        </p>
-      </section>
-      <section id="skills" class="cards">
-  <h2>My Skills</h2>
-
-  <h3>Web Development Fundamentals</h3>
-  <div class="skills-list">
-    <div>HTML5</div>
-    <div>CSS3</div>
-    <div>JavaScript (Basic)</div>
-  </div>
-
-  <h3>UI & Front-End Thinking</h3>
-  <div class="skills-list">
-    <div>Responsive Design</div>
-    <div>Reusable UI Patterns</div>
-    <div>Visual Hierarchy</div>
-  </div>
-
-  <h3>Tools & Workflow</h3>
-  <div class="skills-list">
-    <div>VS Code</div>
-    <div>Git & GitHub</div>
-    <div>GitHub Pages</div>
-    <div>Microsoft Word (Basic)</div>
-  </div>
-</section>
-
-      <section id="projects" class="cards">
-        <h2>My Projects</h2>
-        <div id="projects-container">
-          <div class="project">
-            <h3>TryTasty</h3>
-            <p>Recipe website for easy, fun and tasty snack recipes.</p>
-            <a href="https://trytasty.de/" class="btn">View</a>
-          </div>
-          <div class="project">
-            <h3>Playbud</h3>
-            <p>A game portal for simple icebreaker and bordom-killer games.</p>
-            <a href="https://scyflix.github.io/Playbud/" class="btn">View</a>
-          </div>
-          <div class="project">
-            <h3>ResBuild</h3>
-            <p>
-              A resume builder website that helps to create simple resume(first
-              project i made with JavaScript).
-            </p>
-            <a href="https://scyflix.github.io/ResBuild/" class="btn">View</a>
-          </div>
-          <div class="project">
-            <h3>Thia`s Vogue</h3>
-            <p>
-              A fashionsite showcasing a Nigerian based fashion designer`s work
-              and styles(created with Google Sites).
-            </p>
-            <a href="https://sites.google.com/view/thias-vogue/home" class="btn"
-              >View</a
-            >
-          </div>
-          <div class="project">
-            <h3>Salvation Nsx</h3>
-            <p>An artist website showcasing his work.</p>
-            <a href="https://scyflix.github.io/Abdulroqib-Oladipo/" class="btn"
-              >View</a
-            >
-          </div>
-        </div>
-      </section>
-      <section id="contact" class="cards">
-        <h2>Contact</h2>
-        <p>Lets collaborate and build something fun together</p>
-        <p>
-          <span> Email: </span>
-          <a href="mailto:abdulroqeeboladipo@gmail.com"
-            >abdulroqeeboladipo@gmail.com</a
-          >
-        </p>
-        <p class="contactLinks">
-          <a href="https://github.com/scyflix" target="_blank">Github</a> |
-          <a href="https://x.com/abdulroqib123" target="_blank">Twitter/X</a> |
-          <a href="https://www.linkedin.com/in/abdulroqib-oladipo-a85197253/"
-             target="_blank">Linkedin</a
-          >
-          |
         </p>
       </section>
     </main>
